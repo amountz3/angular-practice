@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <div ng-app="">
+<input type="text" ng-model="noun" placeholder="choose a noun">
+<input type="number" ng-model="number" placeholder="choose a number">
+<input type="number" ng-model="number2" placeholder="choose a number">
+<input type="text" ng-model="adjective" placeholder="choose an adjective">
+<input type="text" ng-model="noun2" placeholder="choose a noun">
+
+
+<p>I like {{noun}}.</p>
+<p ng-if="(number && number2)">It is best if there are {{number + number2}}.</p>
+<p>Do you like {{adjective + " " + noun2 }}?</p>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+  </body>
+</html>
